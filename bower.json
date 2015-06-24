@@ -1,0 +1,6 @@
+{
+  "name": "dz2vik",
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
