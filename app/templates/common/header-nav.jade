@@ -1,0 +1,11 @@
+block link
+-var menu = { 'Мобильные телефоны': '/mobile.html', 'Планшеты': '/', 'Mp3 плееры': '/mp3play.html', 'Персональные компьютеры' : '/pk.html', 'Ноутбуки' : '/notebook.html', 'Apple Tv' : '/appletv.html', 'Аксессуары' : 'accessories'};
+nav.navigation-footer
+	ul.navigation-list
+		each val, key in menu
+			if selected === key
+				li.navigation-item.current
+					a.navigation-link(href=val)= key
+			else
+				li.navigation-item
+					a.navigation-link(href=val)= key

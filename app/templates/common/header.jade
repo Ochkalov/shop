@@ -1,0 +1,27 @@
+header.page-header
+  .container.clearfix
+    div.page-header_top
+      ul.socials
+        li.socials-item
+          a.socials-item__socials-link(href="https://vk.com/id22662543", target="_blank")
+            img.socials-link__img-top(src="img/vk.png")
+        li.socials-item
+          a.socials-item__socials-link(href="https://fb.com/loftschool", target="_blank")
+            img.socials-link__img-top(src="img/fb.png")
+        li.socials-item
+          a.socials-item__socials-link(href="https://twitter.com/loftschool", target="_blank")
+            img.socials-link__img-top(src="img/tw.png")
+      div.top-adress
+        img.top-adress__target(src="img/target.png")
+        span.top-adress__adress г. Москва, ул. Новая 246, офис 214
+      div.top-phone
+        a.top-phone__link(href="tel:+79213221232")
+          span.top-phone__link_prefix +7(921)
+          span.top-phone__link_sufix 3221232
+    div.page-header_main
+      img.logo-main(src="img/logo.png")
+      div.form-finder
+        form.form#finder(role="form")
+          input.input#finder__input
+          button.btn(type="submit") Поиск
+    include ../common/header-nav.jade

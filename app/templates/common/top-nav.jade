@@ -1,0 +1,12 @@
+block link-top
+-var menutop = { 'Главная': '/home.html', 'Каталог': '/catalog.html', 'Планшет': '/'}
+nav.navigation-top
+	ul.navigation-top-list
+		each val, key in menutop
+			if page === key
+				li.navigation-top-item.current
+					span.navigat= product
+			else
+				li.navigation-top-item
+					a.navigation-top-link(href=val)= key
+					span.link-lister >

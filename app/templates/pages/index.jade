@@ -1,0 +1,71 @@
+block link
+	-var selected = 'Планшеты';
+block link-top
+	-var page = 'Планшет', product = 'iPad Air Wi-Fi + Cellular 128GB - Silver';
+extends ../layouts/main_layuot.jade
+block title
+	title Планшеты 
+block content
+	section.planshet
+		.container.clearfix
+			include ../common/top-nav.jade
+			div.slider
+				div.slider-main
+					img.slider-main__img(src="/img/max4.png")
+					ul.slider-thumbs
+						li.slider-thumbs__items
+						img.slider-thumbs__img(src="/img/mini_1.png")
+						li.slider-thumbs__items
+						img.slider-thumbs__img(src="/img/mini_2.png")
+						li.slider-thumbs__items
+							img.slider-thumbs__img(src="/img/mini_3.png")
+			div.specifications
+				h1.specifications__header iPad Air Wi-Fi + Cellular 128GB - Silver
+				table.specifications__table
+					tr.table__first
+						td Артикул
+						td 42787825
+					tr.table__twice
+						td Опция
+						td включена
+					tr.table__first
+						td Цвет
+						td серебристый
+					tr.table__twice
+						td Размер
+						td 1280*1245*90
+					tr.table__first
+						td Вес
+						td 200 кг
+					tr.table__twice
+						td Артикул
+						td 42787825
+					tr.table__first
+						td Опция
+						td включена
+					tr.table__twice
+						td Цвет
+						td серебристый
+				tr.table__twice
+						td Размер
+						td 1280*1245*90
+					tr.table__first
+						td Вес
+						td 200 кг
+
+			div.shop-about
+				h2.shop-about__header Пара слов о магазине
+				p.shop-about__text-1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+									|Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. 
+									|Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+									|Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. 
+				p.shop-about__text-2 Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. 
+									|Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, 
+									|nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, 
+									|sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				p.shop-about__text-3 Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+									|Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. 
+									|Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. 
+									|Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.
+			div.up-button
+				button.up-button__up Наверх

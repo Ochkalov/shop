@@ -1,0 +1,8 @@
+block link-footer_about
+-var menuabout = { 'Смартфоны': '/about.html', 'Планшеты': '/price.html', 'Компьютеры': 'stock.html', 'Аксессуары' : 'akcii.html'}
+nav.navigation-footer_about
+	ul.navigation-footer_about
+		span.footer_about__header Каталог
+		each val, key in menuabout
+				li.navigation-footer-item
+					a.navigation-footer-link(href=val)= key

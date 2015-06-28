@@ -1,0 +1,8 @@
+block link-footer_about
+-var menuabout = { 'О нас': '/about.html', 'Наши цены': '/price.html', 'Наши скидки': 'stock.html', 'Акции' : 'akcii.html'}
+nav.navigation-footer_about
+	ul.navigation-footer_about
+		span.footer_about__header О Магазине
+		each val, key in menuabout
+				li.navigation-footer-item
+					a.navigation-footer-link(href=val)= key
