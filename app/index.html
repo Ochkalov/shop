@@ -20,6 +20,7 @@
     <!-- endbuild -->
     <!-- build:css css/main.min.css -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/product.css">
     <!-- endbuild -->
     <!-- build:js js/modernizr.min.js -->
     <script src="bower/modernizr/modernizr.js"></script>
@@ -33,41 +34,60 @@
     <div class="wrapper">
       <div class="main-content">
         <header class="page-header">
-          <div class="container clearfix">
-            <div class="page-header_top">
-              <ul class="socials">
-                <li class="socials-item">
-                  <a href="https://vk.com/id22662543" target="_blank" class="socials-item__socials-link"><img src="img/vk.png" class="socials-link__img-top"></a>
-                </li>
-                <li class="socials-item">
-                  <a href="https://fb.com/loftschool" target="_blank" class="socials-item__socials-link"><img src="img/fb.png" class="socials-link__img-top"></a>
-                </li>
-                <li class="socials-item">
-                  <a href="https://twitter.com/loftschool" target="_blank" class="socials-item__socials-link"><img src="img/tw.png" class="socials-link__img-top"></a>
-                </li>
-              </ul>
-              <div class="top-adress"><img src="img/target.png" class="top-adress__target"><span class="top-adress__adress">г. Москва, ул. Новая 246, офис 214</span></div>
-              <div class="top-phone"><a href="tel:+79213221232" class="top-phone__link"><span class="top-phone__link_prefix">+7(921)</span><span class="top-phone__link_sufix">3221232</span></a></div>
-            </div>
-            <div class="page-header_main"><img src="img/logo.png" class="logo-main">
-              <div class="form-finder">
-                <form id="finder" role="form" class="form">
-                  <input id="finder__input" class="input">
-                  <button type="submit" class="btn">Поиск</button>
-                </form>
+          <div class="page-header_top">
+            <div class="container clearfix">
+              <div class="header_top-container">
+                <ul class="socials">
+                  <li class="socials-item">
+                    <a href="https://vk.com/id22662543" target="_blank" class="socials-item__socials-link"><img src="img/vk.png" class="socials-link__img-top"></a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="https://fb.com/loftschool" target="_blank" class="socials-item__socials-link"><img src="img/fb.png" class="socials-link__img-top"></a>
+                  </li>
+                  <li class="socials-item">
+                    <a href="https://twitter.com/loftschool" target="_blank" class="socials-item__socials-link"><img src="img/tw.png" class="socials-link__img-top"></a>
+                  </li>
+                </ul>
+                <div class="top-adress"><img src="img/target.png" class="top-adress__target"><span class="top-adress__adress">г. Москва, ул. Новая 246, офис 214</span></div>
+                <div class="top-phone"><a href="tel:+79213221232" class="top-phone__link"><span class="top-phone__link_prefix"><sup>+7(921)</sup></span><span class="top-phone__link_sufix">322 12 32</span></a></div>
               </div>
             </div>
-            <nav class="navigation-footer">
-              <ul class="navigation-list">
-                <li class="navigation-item"><a href="/mobile.html" class="navigation-link">Мобильные телефоны</a></li>
-                <li class="navigation-item current"><a href="/" class="navigation-link">Планшеты</a></li>
-                <li class="navigation-item"><a href="/mp3play.html" class="navigation-link">Mp3 плееры</a></li>
-                <li class="navigation-item"><a href="/pk.html" class="navigation-link">Персональные компьютеры</a></li>
-                <li class="navigation-item"><a href="/notebook.html" class="navigation-link">Ноутбуки</a></li>
-                <li class="navigation-item"><a href="/appletv.html" class="navigation-link">Apple Tv</a></li>
-                <li class="navigation-item"><a href="accessories" class="navigation-link">Аксессуары</a></li>
+          </div>
+          <div class="page-header-main">
+            <div class="container clearfix"><img src="img/logo.png" class="logo-main">
+              <div class="form-finder">
+                <form id="finder" role="form" class="form-finder">
+                  <input id="finder__input" class="input__finder">
+                  <button type="submit" class="btn__finder">Поиск</button>
+                </form>
+              </div>
+              <ul class="main-list">
+                <li class="main-list__item"><a href="/" class="main-links">Карта проезда</a></li>
+                <li class="main-list__item"><a href="/" class="main-links">История заказов</a></li>
+                <li id="basket" class="main-list__item"><img src="img/bascet.png" class="basket__logo"><a href="/" class="main-links__basket">Корзина(3)</a>
+                  <ul class="basket_list">
+                    <li class="basket_item"><img src="img/thumb_iphone.png" class="basket_item__img"><a href="/" class="basket_item__link">iFone 6</a><img src="img/thumb_ipad.png" class="basket_item__img"><a href="/" class="basket_item__link">iPad Air Wi-Fi + Cellular 128GB - Silver6</a>
+                      <img
+                      src="img/thumb_mackbook.png" class="basket_item__img"><a href="/" class="basket_item__link">Macbook Air</a></li>
+                  </ul>
+                </li>
               </ul>
-            </nav>
+            </div>
+          </div>
+          <div class="page-header_bottom">
+            <div class="container clearfix">
+              <nav class="navigation-footer">
+                <ul class="navigation-list">
+                  <li class="navigation-item"><a href="/mobile.html" class="navigation-link">Мобильные телефоны</a></li>
+                  <li class="navigation-item current"><a href="/" class="navigation-link">Планшеты</a></li>
+                  <li class="navigation-item"><a href="/mp3play.html" class="navigation-link">Mp3 плееры</a></li>
+                  <li class="navigation-item"><a href="/pk.html" class="navigation-link">Персональные компьютеры</a></li>
+                  <li class="navigation-item"><a href="/notebook.html" class="navigation-link">Ноутбуки</a></li>
+                  <li class="navigation-item"><a href="/appletv.html" class="navigation-link">Apple Tv</a></li>
+                  <li class="navigation-item"><a href="accessories" class="navigation-link">Аксессуары</a></li>
+                </ul>
+              </nav>
+            </div>
           </div>
         </header>
         <div class="variable-content">
@@ -80,59 +100,61 @@
                   <li class="navigation-top-item current"><span class="navigat">iPad Air Wi-Fi + Cellular 128GB - Silver</span></li>
                 </ul>
               </nav>
-              <div class="slider">
-                <div class="slider-main"><img src="/img/max4.png" class="slider-main__img">
-                  <ul class="slider-thumbs">
-                    <li class="slider-thumbs__items"></li><img src="/img/mini_1.png" class="slider-thumbs__img">
-                    <li class="slider-thumbs__items"></li><img src="/img/mini_2.png" class="slider-thumbs__img">
-                    <li class="slider-thumbs__items"><img src="/img/mini_3.png" class="slider-thumbs__img"></li>
-                  </ul>
+              <div class="product clearfix">
+                <div class="slider">
+                  <div class="slider-main"><img src="/img/max4.png" class="slider-main__img">
+                    <ul class="slider-thumbs">
+                      <li class="slider-thumbs__items"><img src="/img/mini_1.png" class="slider-thumbs__img"></li>
+                      <li class="slider-thumbs__items current"><img src="/img/mini_2.png" class="slider-thumbs__img"></li>
+                      <li class="slider-thumbs__items"><img src="/img/mini_3.png" class="slider-thumbs__img"></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div class="specifications">
-                <h1 class="specifications__header">iPad Air Wi-Fi + Cellular 128GB - Silver</h1>
-                <table class="specifications__table">
-                  <tr class="table__first">
-                    <td>Артикул</td>
-                    <td>42787825</td>
-                  </tr>
-                  <tr class="table__twice">
-                    <td>Опция</td>
-                    <td>включена</td>
-                  </tr>
-                  <tr class="table__first">
-                    <td>Цвет</td>
-                    <td>серебристый</td>
-                  </tr>
-                  <tr class="table__twice">
-                    <td>Размер</td>
-                    <td>1280*1245*90</td>
-                  </tr>
-                  <tr class="table__first">
-                    <td>Вес</td>
-                    <td>200 кг</td>
-                  </tr>
-                  <tr class="table__twice">
-                    <td>Артикул</td>
-                    <td>42787825</td>
-                  </tr>
-                  <tr class="table__first">
-                    <td>Опция</td>
-                    <td>включена</td>
-                  </tr>
-                  <tr class="table__twice">
-                    <td>Цвет</td>
-                    <td>серебристый</td>
-                  </tr>
-                </table>
-                <tr class="table__twice">
-                  <td>Размер</td>
-                  <td>1280*1245*90</td>
-                </tr>
-                <tr class="table__first">
-                  <td>Вес</td>
-                  <td>200 кг</td>
-                </tr>
+                <div class="specifications">
+                  <h1 class="specifications__header">iPad Air Wi-Fi + Cellular 128GB - Silver</h1>
+                  <table class="specifications__table clearfix">
+                    <tr class="table__first">
+                      <td class="left">Артикул</td>
+                      <td class="right">42787825</td>
+                    </tr>
+                    <tr class="table__twice">
+                      <td class="left">Опция</td>
+                      <td class="right">включена</td>
+                    </tr>
+                    <tr class="table__first">
+                      <td class="left">Цвет</td>
+                      <td class="right">серебристый</td>
+                    </tr>
+                    <tr class="table__twice">
+                      <td class="left">Размер</td>
+                      <td class="right">1280*1245*90</td>
+                    </tr>
+                    <tr class="table__first">
+                      <td class="left">Вес</td>
+                      <td class="right">200 кг</td>
+                    </tr>
+                    <tr class="table__twice">
+                      <td class="left">Артикул</td>
+                      <td class="right">42787825</td>
+                    </tr>
+                    <tr class="table__first">
+                      <td class="left">Опция</td>
+                      <td class="right">включена</td>
+                    </tr>
+                    <tr class="table__twice">
+                      <td class="left">Цвет</td>
+                      <td class="right">серебристый</td>
+                    </tr>
+                    <tr class="table__first">
+                      <td class="left">Размер</td>
+                      <td class="right">1280*1245*90</td>
+                    </tr>
+                    <tr class="table__twice">
+                      <td class="left">Вес</td>
+                      <td class="right">200 кг</td>
+                    </tr>
+                  </table>
+                </div>
               </div>
               <div class="shop-about">
                 <h2 class="shop-about__header">Пара слов о магазине</h2>
@@ -144,10 +166,13 @@
                   adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
               </div>
               <div class="up-button">
-                <button class="up-button__up">Наверх</button>
+                <button id="toTop" class="totop">Наверх</button>
               </div>
             </div>
           </section>
+          <!-- build:js js/js.min.js -->
+          <script src="js/upbutton.js"></script>
+          <!-- endbuild -->
         </div>
       </div>
     </div>

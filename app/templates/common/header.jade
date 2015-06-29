@@ -1,27 +1,49 @@
 header.page-header
-  .container.clearfix
     div.page-header_top
-      ul.socials
-        li.socials-item
-          a.socials-item__socials-link(href="https://vk.com/id22662543", target="_blank")
-            img.socials-link__img-top(src="img/vk.png")
-        li.socials-item
-          a.socials-item__socials-link(href="https://fb.com/loftschool", target="_blank")
-            img.socials-link__img-top(src="img/fb.png")
-        li.socials-item
-          a.socials-item__socials-link(href="https://twitter.com/loftschool", target="_blank")
-            img.socials-link__img-top(src="img/tw.png")
-      div.top-adress
-        img.top-adress__target(src="img/target.png")
-        span.top-adress__adress г. Москва, ул. Новая 246, офис 214
-      div.top-phone
-        a.top-phone__link(href="tel:+79213221232")
-          span.top-phone__link_prefix +7(921)
-          span.top-phone__link_sufix 3221232
-    div.page-header_main
-      img.logo-main(src="img/logo.png")
-      div.form-finder
-        form.form#finder(role="form")
-          input.input#finder__input
-          button.btn(type="submit") Поиск
-    include ../common/header-nav.jade
+      .container.clearfix
+        .header_top-container
+          ul.socials
+            li.socials-item
+              a.socials-item__socials-link(href="https://vk.com/id22662543", target="_blank")
+                img.socials-link__img-top(src="img/vk.png")
+            li.socials-item
+              a.socials-item__socials-link(href="https://fb.com/loftschool", target="_blank")
+                img.socials-link__img-top(src="img/fb.png")
+            li.socials-item
+              a.socials-item__socials-link(href="https://twitter.com/loftschool", target="_blank")
+                img.socials-link__img-top(src="img/tw.png")
+          div.top-adress
+            img.top-adress__target(src="img/target.png")
+            span.top-adress__adress г. Москва, ул. Новая 246, офис 214
+          div.top-phone
+            a.top-phone__link(href="tel:+79213221232")
+              span.top-phone__link_prefix
+                sup +7(921)
+              span.top-phone__link_sufix 322 12 32
+    div.page-header-main
+      .container.clearfix
+        img.logo-main(src="img/logo.png")
+        div.form-finder
+          form.form-finder#finder(role="form")
+            input.input__finder#finder__input
+            button.btn__finder(type="submit") Поиск
+        ul.main-list
+          li.main-list__item
+            a.main-links(href="/") Карта проезда
+          li.main-list__item
+            a.main-links(href="/") История заказов
+          li.main-list__item#basket
+            img.basket__logo(src ="img/bascet.png")
+            a.main-links__basket(href="/") Корзина(3)
+            ul.basket_list
+              li.basket_item
+                img.basket_item__img(src="img/thumb_iphone.png")
+                a.basket_item__link(href ="/") iFone 6
+                img.basket_item__img(src="img/thumb_ipad.png")
+                a.basket_item__link(href ="/") iPad Air Wi-Fi + Cellular 128GB - Silver6
+                img.basket_item__img(src="img/thumb_mackbook.png")
+                a.basket_item__link(href ="/") Macbook Air
+    div.page-header_bottom
+      .container.clearfix        
+        include ../common/header-nav.jade
+        
