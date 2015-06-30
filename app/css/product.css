@@ -25,7 +25,7 @@
 	display: block;
 	position: relative;
 	float: left;
-	width: 297px;
+	width: 300px;
 }
 .slider-main__img {
 	margin-bottom: 20px;
@@ -84,7 +84,7 @@ td.right {
 	padding: 5px;
 	width: 250px;
 }
-
+.shop-about {margin-bottom: 40px}
 .shop-about__header {
 	color: #5c7b98;
 	font-family: 'elektra_medium_proregular';
@@ -114,8 +114,23 @@ td.right {
 	margin: 0 0 0 33px;
 }
 .up-button {
-	position: absolute;
-	right: 50px;
+  position: absolute;
+  right: 20px;
+  bottom: 240px;
+}
+.up-button:after {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: 32px; bottom: 34px; /* Положение треугольника */
+    border: 6px solid transparent; /* Прозрачные границы */
+    border-bottom: 6px solid #00b9fe; /* Добавляем треугольник */
+}
+.up-button:before {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    right: 32px; bottom: 0px; /* Положение треугольника */
+    border: 6px solid transparent; /* Прозрачные границы */
+    border-bottom: 6px solid white; /* Добавляем треугольник */
 }
 .totop {
 	width: 75px;

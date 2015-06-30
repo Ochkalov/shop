@@ -1,11 +1,46 @@
 block link
--var menu = { 'Мобильные телефоны': '/mobile.html', 'Планшеты': '/', 'Mp3 плееры': '/mp3play.html', 'Персональные компьютеры' : '/pk.html', 'Ноутбуки' : '/notebook.html', 'Apple Tv' : '/appletv.html', 'Аксессуары' : 'accessories'};
-nav.navigation-footer
-	ul.navigation-list
-		each val, key in menu
-			if selected === key
-				li.navigation-item.current
-					a.navigation-link(href=val)= key
-			else
+div.page-header_bottom__wrapper
+	nav.navigation-footer
+			ul.navigation-list
 				li.navigation-item
-					a.navigation-link(href=val)= key
+					a.navigation-link(href="/mobile.html")
+						img.nav-link__img(src="img/b-01.png")
+						img.nav-link__img__current(src="img/b_active-01.png")
+						img.nav-link__img__hover(src="img/b_hover-01.png")
+						span.nav-item__text Телефоны
+				li.navigation-item.current
+					a.navigation-link(href="/planshet.html")
+						img.nav-link__img(src="img/b-02.png")
+						img.nav-link__img__current(src="img/b_active-02.png")
+						img.nav-link__img__hover(src="img/b_hover-02.png")
+						span.nav-item__text Планшеты 
+				li.navigation-item
+					a.navigation-link(href="/mp3.html")
+						img.nav-link__img(src="img/b-03.png")
+						img.nav-link__img__current(src="img/b_active-03.png")
+						img.nav-link__img__hover(src="img/b_hover-03.png")
+						span.nav-item__text Mp3 плееры
+				li.navigation-item
+					a.navigation-link(href="/pk.html")
+						img.nav-link__img(src="img/b-04.png")
+						img.nav-link__img__current(src="img/b_active-04.png")
+						img.nav-link__img__hover(src="img/b_hover-04.png")
+						span.nav-item__text Персональные компьютеры
+				li.navigation-item
+					a.navigation-link(href="/notebook.html")
+						img.nav-link__img(src="img/b-05.png")
+						img.nav-link__img__current(src="img/b_active-05.png")
+						img.nav-link__img__hover(src="img/b_hover-05.png")
+						span.nav-item__text Ноутбуки
+				li.navigation-item
+					a.navigation-link(href="/appletv.html")
+						img.nav-link__img(src="img/b-06.png")
+						img.nav-link__img__current(src="img/b_active-06.png")
+						img.nav-link__img__hover(src="img/b_hover-06.png")
+						span.nav-item__text Apple Tv
+				li.navigation-item
+					a.navigation-link(href="/accessories.html")
+						img.nav-link__img(src="img/b-07.png")
+						img.nav-link__img__current(src="img/b_active-07.png")
+						img.nav-link__img__hover(src="img/b_hover-07.png")
+						span.nav-item__text Аксессуары

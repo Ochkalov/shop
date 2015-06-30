@@ -4,6 +4,7 @@ html {
 body {
 	height: 100%;
 	min-width: 1200px;
+	margin: 0;
 	font: normal 1em 'elektra_light_proregular';
 }
 /* общие классы */
@@ -34,12 +35,12 @@ body {
 }
 .wrapper:after {
 	content: "";
-	height: 80px;
+	height: 228px;
 	display: block;
 }
 .page-footer{
-	height: 80px;
-	margin-top: -80px;	
+	height: 228px;
+	margin-top: -228px;	
 }
 /* прибьём футер к низу - конец*/
 
@@ -180,7 +181,7 @@ body {
 
 /*Header-bottom*/
 .page-header_bottom {
-	background: #f7f7f7;
+	background: #f9fafb;
 	height: 40px;
 	  margin-bottom: 20px;
 	-webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.75);
@@ -188,14 +189,7 @@ body {
 	box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.75);
 }
 .navigation-footer {
-background: rgb(247,247,247); /* Old browsers */
-background: -moz-linear-gradient(left, rgb(247,247,247) 0%, rgb(102,102,102) 1%, rgb(102,102,102) 99%, rgb(102,102,102) 99%, rgb(102,102,102) 99%, rgb(247,247,247) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(247,247,247)), color-stop(1%,rgb(102,102,102)), color-stop(99%,rgb(102,102,102)), color-stop(99%,rgb(102,102,102)), color-stop(99%,rgb(102,102,102)), color-stop(100%,rgb(247,247,247))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(left, rgb(247,247,247) 0%,rgb(102,102,102) 1%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(247,247,247) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(left, rgb(247,247,247) 0%,rgb(102,102,102) 1%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(247,247,247) 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(left, rgb(247,247,247) 0%,rgb(102,102,102) 1%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(247,247,247) 100%); /* IE10+ */
-background: linear-gradient(to right, rgb(247,247,247) 0%,rgb(102,102,102) 1%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(102,102,102) 99%,rgb(247,247,247) 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f7f7f7',GradientType=1 ); /* IE6-9 */
+
 }
 .navigation-list {
 	position: relative;
@@ -206,64 +200,103 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', end
 .navigation-item {
 	display: inline-block;
 	position: relative;
-	z-index: 2;
-	background: #f7f7f7;
-	padding: 10.38px;
-	margin-left: 17px;
-
-	/*border-right: 1px solid #dbe2ec;*/
+	height: 40px;
+	overflow: hidden;
+	margin-left: -18px;
 }
-.navigation-item:first-child {margin-left: 0px;}
-
-.navigation-item:after {
-    content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    right: -34px; bottom: 0px; /* Положение треугольника */
-    border: 20px solid transparent; /* Прозрачные границы */
-    border-left: 15px solid #f7f7f7; /* Добавляем треугольник */
-   }
-.navigation-item:before {
-    content: '';
-    z-index: -1; 
-    position: absolute; /* Абсолютное позиционирование */
-    left: -20px; bottom: 0px; /* Положение треугольника */
-    border: 20px solid #f7f7f7; /* Прозрачные границы */
-    border-left: 15px solid transparent; /* Добавляем треугольник */
- }
-.navigation-item:first-child:before {border: none; }
-.navigation-item:first-child {margin-left: 0; padding-left: 0}
-.navigation-item:last-child {padding-right: 2px}
-.navigation-item:last-child:after {border: none; }
-.navigation-item:last-child .navigation-link {margin-left: 5px}
-.navigation-item.current {
-	background: #00b9fe;
-	z-index: 500;
+.navigation-item:first-child {margin-left: 0}
+.navigation-item.current .nav-link__img__current{
+	display: block;
+	z-index: 1;
 }
-.navigation-item.current:after {
-    content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    right: -34px; bottom: 0px; /* Положение треугольника */
-    border: 20px solid transparent; /* Прозрачные границы */
-    border-left: 15px solid #00b9fe; /* Добавляем треугольник */
+.navigation-item.current .nav-link__img{
+	display: none;
+
 }
-.navigation-item.current:before {
-    content: ''; 
-    position: absolute; /* Абсолютное позиционирование */
-    z-index: -1;
-    left: -19.6px; bottom: 0px; /* Положение треугольника */
-    border: 20px solid #00b9fe; /* Прозрачные границы */
-    border-left: 15px solid transparent; /* Добавляем треугольник */
- }
- .navigation-item:hover {opacity: 0.9;}
+/*.navigation-item.current:hover .nav-link__hover{
+	display: none;
 
-.navigation-item.current .navigation-link{
-	color: white;
+}
+.navigation-item.current:hover .nav-link__img__current{
+	display: none;
 
+}
+.navigation-item.current:hover .nav-link__img{
+	display: none;
+}*/
+
+.navigation-item:hover .nav-link__img__hover{
+	display: block;
+}
+.navigation-item:hover .nav-link__img{
+	display: none;
 }
 
 .navigation-link {
 	text-decoration: none;
-	color: #5c7b98;
-	margin-left: 3px;
-	font-size: 15px;
+}
+
+.nav-link__img {
+	position: relative;
+	display: block;
+}
+.nav-link__img__current {
+	position: relative;
+	display: none;
+}
+.nav-link__img__hover {
+	position: relative;
+	display: none;	
+}
+.nav-item__text {
+	position: absolute;
+	left: -9999px;
+}
+
+.page-footer {
+	background: url(../img/title_footer.png) repeat;
+}
+.footer-logo {
+	display: inline-block;
+	position: relative;
+	float: left;
+	top: 94px;
+
+}
+.footer-nav {
+	position: relative;
+	display: inline-block;
+	top: 45px;
+	margin-left: 55px;
+}
+.navigation-footer_about {
+	position: relative;
+	display: inline-block;
+
+	margin-left: 20px;
+}
+
+.footer-socials {
+	display: inline-block;
+	position: relative;
+	float: right;
+	top: 75px;
+}
+
+.foter-appstore {
+margin-bottom: 10px;
+
+}
+
+.navigation-footer-item {
+	list-style: none;
+
+}
+.footer_about__header {
+	color: white;
+	font-family: 'elektra_medium_proregular';
+}
+.navigation-footer-link {
+	color: white;
+	line-height: 1.5;
 }
