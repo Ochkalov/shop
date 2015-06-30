@@ -33,16 +33,25 @@ header.page-header
           li.main-list__item
             a.main-links(href="/") История заказов
           li.main-list__item#basket
-            img.basket__logo(src ="img/bascet.png")
-            a.main-links__basket(href="/") Корзина(3)
+            div.basket_wrapper
+              img.basket__logo(src ="img/bascet.png")
+              a.main-links__basket(href="/") Корзина(3)
             ul.basket_list
               li.basket_item
-                img.basket_item__img(src="img/thumb_iphone.png")
-                a.basket_item__link(href ="/") iFone 6
-                img.basket_item__img(src="img/thumb_ipad.png")
-                a.basket_item__link(href ="/") iPad Air Wi-Fi + Cellular 128GB - Silver6
-                img.basket_item__img(src="img/thumb_mackbook.png")
-                a.basket_item__link(href ="/") Macbook Air
+                .bascet-img__wrapper
+                  img.basket_item__img(src="img/thumb_iphone.png")
+                .bascet-link__wrapper
+                  a.basket_item__link(href ="/") iFone 6
+              li.basket_item.twice
+                .bascet-img__wrapper
+                  img.basket_item__img(src="img/thumb_ipad.png")
+                .bascet-link__wrapper
+                  a.basket_item__link(href ="/") iPad Air Wi-Fi + Cellular 128GB - Silver6
+              li.basket_item
+                .bascet-img__wrapper
+                  img.basket_item__img(src="img/thumb_mackbook.png")
+                .bascet-link__wrapper
+                  a.basket_item__link(href ="/") Macbook Air
     div.page-header_bottom
       .container.clearfix        
         include ../common/header-nav.jade
