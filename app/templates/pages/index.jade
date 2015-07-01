@@ -11,19 +11,27 @@ block content
 			include ../common/top-nav.jade
 			.product.clearfix
 				div.slider
-					div.slider-main
-						img.slider-main__img(src="img/max4.png")
+					div.slider-wrapper
+						ul.slider__list
+							li.slider__item.active
+								img.slider-main__img(src="img/max4.png")
+							li.slider__item
+								img.slider-main__img(src="img/max1.png")
+							li.slider__item
+								img.slider-main__img(src="img/max2.png")
 						.slider-thumbs_wrapper
-							a.slider-main__arrow#prev(href="/")
+							a.slider-main__arrow.button_slider__prev(href="#")
 								img.slider-main__arrow(src="img/prevt_btn.png")
-							ul.slider-thumbs
-								li.slider-thumbs__items
-									img.slider-thumbs__img(src="img/mini_1.png")
-								li.slider-thumbs__items.current
-									img.slider-thumbs__img(src="img/mini_2.png")
-								li.slider-thumbs__items
-									img.slider-thumbs__img(src="img/mini_3.png")
-							a.slider-main__arrow#next(href="/")
+							.slider-thumbs_container
+								ul.slider-thumbs.clearfix
+									li.slider-thumbs__items
+										img.slider-thumbs__img(src="img/mini_1.png")
+									li.slider-thumbs__items.current
+										img.slider-thumbs__img(src="img/mini_2.png")
+									li.slider-thumbs__items
+										img.slider-thumbs__img(src="img/mini_3.png")
+									li.slider-thumbs__items
+							a.slider-main__arrow.button_slider__next(href="#")
 								img.slider-main__arrow(src="img/next_btn.png")
 	
 				div.specifications

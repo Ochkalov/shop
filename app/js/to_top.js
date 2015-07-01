@@ -16,16 +16,24 @@ var toTop = (function () {
 				$('body, html').animate({scrollTop:0},800);
 	    	},
 	    	_scrollHide = function (){ // прячем-показываем кнопку
-				var scrollTop = $(window).scrollTop();
-				if($(this) !== 0) {
- 
-			$('.up-button').fadeIn();
- 				console.log('in');
-			} else {
- 
-			$('.up-button').fadeOut();
- 				console.log('out');
-		}
+				var scrollTop = 0,
+					toTop = $('.up-button');
+
+					if (document.documentElement && document.documentElement.scrollTop) {
+    		            scrollTop = document.documentElement.scrollTop;
+           			 } 
+
+				else { scrollTop = $(this).scrollTop();
+            }
+            if (scrollTop != 0) {
+                toTop.fadeIn();
+                console.log('in')
+            }
+            else {
+            	console.log('out')
+                toTop.fadeOut();
+            }
+
 		}; 
 
 	return {
