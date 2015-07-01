@@ -21,12 +21,37 @@
 .product {
 	margin-bottom: 40px;
 }
-.slider-main {
-	display: block;
+.slider {
+	display: inline-block;
+	padding: 0;
 	position: relative;
 	float: left;
+	overflow: hidden;
 	width: 300px;
 }
+.slider__list {
+	padding: 0;
+	position: relative;
+	width: 300px;
+}
+.slider__item {
+	position: absolute;
+  list-style: none;
+	top: 0;
+	left: 0px;
+	z-index: 0;
+	width: 100%;
+
+}
+.slider__item.active {
+	position: relative;
+	  left: 0px;
+	z-index: 1;
+}
+.slider__item.inslide {
+	z-index: 2;
+}
+
 .slider-main__img {
 	margin-bottom: 20px;
 }
@@ -36,15 +61,16 @@
 }
 
 .slider-thumbs {
-	display: inline-block;
 	position: relative;
+	width: 2000px;
 	padding: 0;
 	margin: 0;
+	left: 0;
 }
 
 .slider-thumbs__items {
   list-style: none;
-  display: inline-block;
+  float: left;
   margin-left: 4px;
   opacity: 0.2;
 }
@@ -52,7 +78,14 @@
 .slider-thumbs__items.current{
 	opacity: 1;
 }
-
+.slider-thumbs_container {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	width: 232px;
+	overflow: hidden;
+}
 .slider-main__arrow {
 	position: relative;
 	top: -10px;
@@ -145,7 +178,7 @@ td.right {
 .up-button:before {
     content: ''; 
     position: absolute; /* Абсолютное позиционирование */
-    right: 32px; bottom: 0px; /* Положение треугольника */
+    right: 32px; bottom: -1px; /* Положение треугольника */
     border: 6px solid transparent; /* Прозрачные границы */
     border-bottom: 6px solid white; /* Добавляем треугольник */
 }

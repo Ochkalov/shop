@@ -28,6 +28,9 @@
     <!-- build:js js/jquery.min.js -->
     <script src="bower/jquery/dist/jquery.js"></script>
     <!-- endbuild -->
+    <!-- build:js js/jquery2.min.js -->
+    <script src="bower/jquery/dist/jquery-2.1.4.min.js"></script>
+    <!-- endbuild -->
   </head>
 
   <body>
@@ -131,15 +134,23 @@
               </nav>
               <div class="product clearfix">
                 <div class="slider">
-                  <div class="slider-main"><img src="img/max4.png" class="slider-main__img">
+                  <div class="slider-wrapper">
+                    <ul class="slider__list">
+                      <li class="slider__item active"><img src="img/max4.png" class="slider-main__img"></li>
+                      <li class="slider__item"><img src="img/max1.png" class="slider-main__img"></li>
+                      <li class="slider__item"><img src="img/max2.png" class="slider-main__img"></li>
+                    </ul>
                     <div class="slider-thumbs_wrapper">
-                      <a id="prev" href="/" class="slider-main__arrow"><img src="img/prevt_btn.png" class="slider-main__arrow"></a>
-                      <ul class="slider-thumbs">
-                        <li class="slider-thumbs__items"><img src="img/mini_1.png" class="slider-thumbs__img"></li>
-                        <li class="slider-thumbs__items current"><img src="img/mini_2.png" class="slider-thumbs__img"></li>
-                        <li class="slider-thumbs__items"><img src="img/mini_3.png" class="slider-thumbs__img"></li>
-                      </ul>
-                      <a id="next" href="/" class="slider-main__arrow"><img src="img/next_btn.png" class="slider-main__arrow"></a>
+                      <a href="#" class="slider-main__arrow button_slider__prev"><img src="img/prevt_btn.png" class="slider-main__arrow"></a>
+                      <div class="slider-thumbs_container">
+                        <ul class="slider-thumbs clearfix">
+                          <li class="slider-thumbs__items"><img src="img/mini_1.png" class="slider-thumbs__img"></li>
+                          <li class="slider-thumbs__items current"><img src="img/mini_2.png" class="slider-thumbs__img"></li>
+                          <li class="slider-thumbs__items"><img src="img/mini_3.png" class="slider-thumbs__img"></li>
+                          <li class="slider-thumbs__items"></li>
+                        </ul>
+                      </div>
+                      <a href="#" class="slider-main__arrow button_slider__next"><img src="img/next_btn.png" class="slider-main__arrow"></a>
                     </div>
                   </div>
                 </div>
@@ -263,6 +274,9 @@
       </div>
       <!-- build:js js/to_top.min.js -->
       <script src="js/to_top.js"></script>
+      <!-- endbuild -->
+      <!-- build:js js/slider.min.js -->
+      <script src="js/product_slider.js"></script>
       <!-- endbuild -->
     </footer>
   </body>
