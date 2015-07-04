@@ -21,7 +21,7 @@ var toTop = (function () {
 
 					if (document.documentElement && document.documentElement.scrollTop) {
     		            scrollTop = document.documentElement.scrollTop;
-           			 } 
+           			 }  
 
 				else { scrollTop = $(this).scrollTop();
             }
