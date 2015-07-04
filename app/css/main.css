@@ -59,22 +59,23 @@ a img {
 .socials .socials-item {
   list-style: none;
   display: inline-block;
-  margin-left: 7px;
+  margin-left: 1px;
   /* Отступ у таких элементов всегда слева */
 }
 .socials .socials-item:first-child {
   margin-left: 0;
   /* А у первого элемента обнуляем отступ */
 }
+.socials .socials-item:hover {opacity: 0.8}
 .socials .socials-link__img-top {
 	height: 25px;
 	width: 25px; 
 }
 .socials .socials-link__img-footer {
-	height: 45px;
-	width: 45px; 
+	height: 40px;
+	width: 40px; 
+	margin-left: 6px;
 }
-
 /*Header-top*/
 .page-header_top {
 	background: #42606d;
@@ -86,15 +87,15 @@ a img {
 .top-adress {
 	display: inline-block;
 	position: relative;
-	margin-left: 240px;
+	margin-left: 289px;
 }
 .top-adress__adress {
 	position: relative;
 	top: -5px;
 	margin-left: 10px;
-	font-family: 'elektra_medium_proregular';
+	font-family: 'elektra_light_proregular';
 	color: white;
-	font-size: 15px;	
+	font-size: 13px;	
 }
 .top-phone {
 	position: relative;
@@ -121,20 +122,26 @@ a img {
 .page-header-main{
 	background: #dbe4f0;
 	padding: 10px;
-	height: 88px;
+	height: 77px;
 }
 
 .logo-main {
-	position: relative;
-	display: inline-block;
+	position: absolute;
+	display: block;
 	float: left;
-	top: 20px;
+	top: 64px;
+}
+.form-finder_wrapper {
+  position: relative;
+  display: inline-block;
+  left: 43px;
+  top: -29px;
 }
 .form-finder {
-	position: relative;
-	display: inline-block;
-	top: 12px;
-	margin-left: 20px;
+  position: absolute;
+  display: block;
+  top: 36px;
+  left: 216px;
 }
 .input__finder {
 	width: 253px;
@@ -145,9 +152,12 @@ a img {
 	padding-left: 5px;
 }
 .btn__finder {
+	  position: absolute;
+  left: 270px;
+  top: 0px;
 	height: 38px;
 	width: 80px;
-	margin-left: -10px;
+	margin-left: -11px;
 	background: #00b9fe;
 	border: none;
 	padding: 0;
@@ -157,11 +167,16 @@ a img {
 	position: relative;
 	float: right;
 	display: inline-block;
-	top: -24px;
 }
 .main-list__item {
 	display: inline-block;
-	margin-left: 15px;
+	margin-left: 20px;
+	font-size: 13px;
+}
+.main-list__item.basket {
+	display: inline-block;
+	margin-left: 41px;
+	font-size: 13px;
 }
 .main-list__item:first-child {margin-left: 0;}
 .main-links {
@@ -172,7 +187,7 @@ a img {
 	margin-left: 5px;
 }
 .basket_wrapper {
-	padding: 3px;
+	padding: 12px;
 }
 
 
@@ -231,16 +246,14 @@ a img {
 	background: #f9fafb;
 	height: 40px;
 	  margin-bottom: 20px;
-	-webkit-box-shadow: 0px 3px 8px 0px rgba(50, 50, 50, 0.75);
-	-moz-box-shadow:    0px 3px 8px 0px rgba(50, 50, 50, 0.75);
-	box-shadow:         0px 3px 8px 0px rgba(50, 50, 50, 0.75);
+	  border-bottom: 2px solid #e3e3e3;
 }
 .navigation-footer {
 padding: 0;
 margin: 0;
 }
 .navigation-list {
-	position: relative;
+	position: absolute;
 	overflow: hidden;
 	margin: 0;
 	padding: 0;
@@ -310,14 +323,18 @@ margin: 0;
 	display: inline-block;
 	position: relative;
 	float: left;
-	top: 94px;
+	top: 96px;
 
+}
+.footer__logo-text {
+	position: absolute;
+	left: -9999px;
 }
 .footer-nav {
 	position: relative;
 	display: inline-block;
 	top: 45px;
-	margin-left: 55px;
+	margin-left: 80px;
 }
 .navigation-footer_about {
 	position: relative;
@@ -326,25 +343,30 @@ margin: 0;
 	margin-left: 20px;
 }
 
+.navigation-footer_about:first-child {margin-left: 0;}
+
 .footer-socials {
 	display: inline-block;
 	position: relative;
 	float: right;
-	top: 75px;
+	top: 74px;
 }
 
 .foter-appstore {
-margin-bottom: 10px;
+margin-bottom: 18px;
 
 }
 
 .navigation-footer-item {
 	list-style: none;
-
+	line-height: 1.6;
 }
+.navigation-footer-item:hover {opacity: 0.5;}
+
 .footer_about__header {
 	color: white;
 	font-family: 'elektra_medium_proregular';
+	margin-bottom: 3px;
 }
 .navigation-footer-link {
 	color: white;

@@ -23,16 +23,16 @@ header.page-header
     div.page-header-main
       .container.clearfix
         img.logo-main(src="img/logo.png")
-        div.form-finder
+        div.form-finder_wrapper
           form.form-finder#finder(role="form")
             input.input__finder#finder__input
-            button.btn__finder(type="submit") Поиск
+            button.btn__finder(type="submit") Поиск 
         ul.main-list
           li.main-list__item
             a.main-links(href="/") Карта проезда
           li.main-list__item
             a.main-links(href="/") История заказов
-          li.main-list__item#basket
+          li.main-list__item.basket#basket
             div.basket_wrapper
               img.basket__logo(src ="img/bascet.png")
               a.main-links__basket(href="/") Корзина(3)

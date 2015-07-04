@@ -2,7 +2,7 @@ block link-footer_about
 -var menuabout = { 'Телефоны': '/about.html', 'Адреса': '/price.html', 'Карта проезда': 'stock.html', 'Обратная связь' : 'akcii.html'}
 nav.navigation-footer_about
 	ul.navigation-footer_about
-		span.footer_about__header Контакты
+		.footer_about__header Контакты
 		each val, key in menuabout
 				li.navigation-footer-item
 					a.navigation-footer-link(href=val)= key

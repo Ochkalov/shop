@@ -26,10 +26,7 @@
     <script src="bower/modernizr/modernizr.js"></script>
     <!-- endbuild -->
     <!-- build:js js/jquery.min.js -->
-    <script src="bower/jquery/dist/jquery.js"></script>
-    <!-- endbuild -->
-    <!-- build:js js/jquery2.min.js -->
-    <script src="bower/jquery/dist/jquery-2.1.4.min.js"></script>
+    <script src="bower/jquery/dist/jquery-1.11.3.min.js"></script>
     <!-- endbuild -->
   </head>
 
@@ -61,16 +58,16 @@
           </div>
           <div class="page-header-main">
             <div class="container clearfix"><img src="img/logo.png" class="logo-main">
-              <div class="form-finder">
+              <div class="form-finder_wrapper">
                 <form id="finder" role="form" class="form-finder">
                   <input id="finder__input" class="input__finder">
-                  <button type="submit" class="btn__finder">Поиск</button>
+                  <button type="submit" class="btn__finder">Поиск </button>
                 </form>
               </div>
               <ul class="main-list">
                 <li class="main-list__item"><a href="/" class="main-links">Карта проезда</a></li>
                 <li class="main-list__item"><a href="/" class="main-links">История заказов</a></li>
-                <li id="basket" class="main-list__item">
+                <li id="basket" class="main-list__item basket">
                   <div class="basket_wrapper"><img src="img/bascet.png" class="basket__logo"><a href="/" class="main-links__basket">Корзина(3)</a></div>
                   <ul class="basket_list">
                     <li class="basket_item">
@@ -147,7 +144,6 @@
                           <li class="slider-thumbs__items"><img src="img/mini_1.png" class="slider-thumbs__img"></li>
                           <li class="slider-thumbs__items current"><img src="img/mini_2.png" class="slider-thumbs__img"></li>
                           <li class="slider-thumbs__items"><img src="img/mini_3.png" class="slider-thumbs__img"></li>
-                          <li class="slider-thumbs__items"></li>
                         </ul>
                       </div>
                       <a href="#" class="slider-main__arrow button_slider__next"><img src="img/next_btn.png" class="slider-main__arrow"></a>
@@ -204,15 +200,15 @@
                 <h2 class="shop-about__header">Пара слов о магазине</h2>
                 <ul class="shop-about_list">
                   <li class="shop-about_item">
-                    <p class="shop-about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis
                       parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. </p>
                   </li>
                   <li class="shop-about_item">
-                    <p class="shop-about__text">Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                    <p>Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
                       nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                   </li>
                   <li class="shop-about_item">
-                    <p class="shop-about__text">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur
+                    <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio. Lorem ipsum dolor sit amet, consectetur
                       adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
                   </li>
                 </ul>
@@ -227,10 +223,15 @@
     </div>
     <footer class="page-footer">
       <div class="container clearfix">
-        <div class="footer-logo"><img src="img/logo_w.png" class="footer-logo__img"></div>
+        <div class="footer-logo">
+          <a href="#" class="footer-logo__link"><img src="img/logo_w.png" class="footer-logo__img">
+            <div class="footer__logo-text">ЭпплShop</div>
+          </a>
+        </div>
         <div class="footer-nav">
           <nav class="navigation-footer_about">
-            <ul class="navigation-footer_about"><span class="footer_about__header">О Магазине</span>
+            <ul class="navigation-footer_about">
+              <div class="footer_about__header">О Магазине</div>
               <li class="navigation-footer-item"><a href="/about.html" class="navigation-footer-link">О нас</a></li>
               <li class="navigation-footer-item"><a href="/price.html" class="navigation-footer-link">Наши цены</a></li>
               <li class="navigation-footer-item"><a href="stock.html" class="navigation-footer-link">Наши скидки</a></li>
@@ -238,7 +239,8 @@
             </ul>
           </nav>
           <nav class="navigation-footer_about">
-            <ul class="navigation-footer_about"><span class="footer_about__header">Каталог</span>
+            <ul class="navigation-footer_about">
+              <div class="footer_about__header">Каталог</div>
               <li class="navigation-footer-item"><a href="/about.html" class="navigation-footer-link">Смартфоны</a></li>
               <li class="navigation-footer-item"><a href="/price.html" class="navigation-footer-link">Планшеты</a></li>
               <li class="navigation-footer-item"><a href="stock.html" class="navigation-footer-link">Компьютеры</a></li>
@@ -246,7 +248,8 @@
             </ul>
           </nav>
           <nav class="navigation-footer_about">
-            <ul class="navigation-footer_about"><span class="footer_about__header">Контакты</span>
+            <ul class="navigation-footer_about">
+              <div class="footer_about__header">Контакты</div>
               <li class="navigation-footer-item"><a href="/about.html" class="navigation-footer-link">Телефоны</a></li>
               <li class="navigation-footer-item"><a href="/price.html" class="navigation-footer-link">Адреса</a></li>
               <li class="navigation-footer-item"><a href="stock.html" class="navigation-footer-link">Карта проезда</a></li>
